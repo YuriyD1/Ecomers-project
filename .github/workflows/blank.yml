@@ -1,9 +1,11 @@
 # This is a basic workflow to help you get started with Actions
-
-name: npx create-nx-workspace@latest --ci=github
+git add .
+git commit -m 'add CI workflow file'
+git push origin add-workflow
+name: CI
 
 # Controls when the workflow will run
-on:
+on: 
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
